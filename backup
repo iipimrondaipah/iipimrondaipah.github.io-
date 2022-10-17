@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+<style>
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Papyrus', sans-serif;
+}
+
+body{
+    background: rgb(171,255,0);
+	background: linear-gradient(239deg, rgba(171,255,0,1) 0%, rgba(64,121,154,1) 100%);
+}
+.penting .hidup{
+    font-weight: bold;
+}
+
+.sangat{
+    background: rgb(180,175,58);
+	background: linear-gradient(239deg, rgba(180,175,58,1) 0%, rgba(149,12,114,0.3373713118306706) 51%, rgba(69,252,236,1) 100%);
+    padding: 10px;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    text-align: justify;
+}
+.sangat-penting{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.penting{
+    position: fixed;
+    background: rgb(180,175,58);
+	background: linear-gradient(239deg, rgba(180,175,58,1) 0%, rgba(12,149,98,0.3373713118306706) 20%, rgba(167,53,109,1) 32%, rgba(112,31,183,1) 56%, rgba(51,153,40,1) 80%, rgba(69,212,252,1) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.1s ease-in-out;
+    box-shadow:1px 1px 10px;
+    z-index: 99;
+}
+.penting .sangat-penting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.penting ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.penting a{
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.penting a:hover{
+    color: black;
+}
+
+.latar{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.latar span {
+    font-size: 35px;
+    color: crimson;
+    text-shadow: white;
+}
+
+</style>
+
+    <nav class="penting">
+    <div class="sangat-penting">
+      <ul>
+       <li class="hidup" id="nav_sangat1"><a href="#">Home</a></li>
+       <li class="mati" id="nav_sangat2"><a href="#">Layanan</a></li>
+       <li class="mati" id="nav_sangat3"><a href="#">Tentang</a></li>
+
+      </ul>
+     </div>
+    </nav>
+
+    <br><br><br>
+
+    <div class="sangat" id="sangat1">
+      <br>
+      <h2>Menu Home</h2>
+        <p>Sed mollit commodo excepteur nulla exercitation et eu sunt aliqua aliquip anim in sint sint exercitation deserunt. Aliqua ex ut ut ut enim non anim dolor tempor aute reprehenderit voluptate nisi aute sint.</p>
+    </div>
+    <div class="sangat" id="sangat2">
+        <br>
+      <h2>Menu Layanan</h2>
+        <p>Ut ea in officia enim esse laboris labore laboris minim dolore. Adipisicing ea consequat duis fugiat do ea culpa dolor ut ad ex irure exercitation est ut. Dolore ut esse nulla in labore velit excepteur sint tempor adipisicing sit.</p>   
+    </div>
+    <div class="sangat" id="sangat3">
+        <br>
+      <h2>Menu Tentang</h2>
+        <p>Et sit in culpa enim aliqua ullamco laborum excepteur aute exercitation. Dolor quis cupidatat aute nisi magna culpa dolor exercitation ex non. Lorem ipsum tempor cillum tempor mollit esse et nostrud proident labore commodo velit aliqua enim dolor consectetur id pariatur cillum consectetur. Enim in ut tempor deserunt ullamco minim ea cillum ea minim commodo in in dolore aliquip.</p>   
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="iip.js"></script>
+</body>
+</html>
